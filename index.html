@@ -410,7 +410,9 @@ http://www.tooplate.com/view/2086-multi-color
                     <a href="#" class="tm-social-link"><i class="fa fa-instagram"></i></a>
                     <a href="#" class="tm-social-link"><i class="fa fa-linkedin"></i></a>
                 </div>
-                <p class="tm-copyright-text">Copyright &copy; 2024 Mo Khatami</p>
+                <p class="tm-copyright-text">
+				    Copyright &copy; <script>document.write(new Date().getFullYear());</script> Mo Khatami
+				</p>
             </footer>
                     
         </div> 
@@ -471,22 +473,6 @@ http://www.tooplate.com/view/2086-multi-color
                 $('body').addClass('loaded');
             });
 
-            var map = '';
-            var center;
-            function initialize() {
-                var mapOptions = { zoom: 14, center: new google.maps.LatLng(45.4215, -75.6972), scrollwheel: false };
-                map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
-                google.maps.event.addDomListener(map, 'idle', function() { calculateCenter(); });
-                google.maps.event.addDomListener(window, 'resize', function() { map.setCenter(center); });
-            }
-            function calculateCenter() { center = map.getCenter(); }
-            function loadGoogleMap(){
-                var script = document.createElement('script');
-                script.type = 'text/javascript';
-                script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize';
-                document.body.appendChild(script);
-            }
-            $(function() { loadGoogleMap(); });
         </script>            
     </body>
 </html>
