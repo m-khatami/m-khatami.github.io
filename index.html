@@ -74,21 +74,20 @@ http://www.tooplate.com/view/2086-multi-color
             </div> 
 
             <ul class="cd-hero-slider">
-
-                <!-- Page 1 Gallery One -->
-				<li class="selected">                       
+				<!-- Page 1 Gallery One -->
+				<li class="selected">                        
 				    <div class="cd-full-width">
 				        <div class="container-fluid js-tm-page-content" data-page-no="1" data-page-type="gallery">
 				            <div class="tm-img-gallery-container">
 				                <div class="tm-img-gallery gallery-one">
 				                    
-				                    <div class="tm-img-gallery-info-container">                                    
+				                    <!-- Overriding max-width here to ensure it uses the full page width -->
+				                    <div class="tm-img-gallery-info-container" style="max-width: 100%; width: 100%; padding: 0 5%;">                                     
 				                        <h2 class="tm-text-title tm-gallery-title"><span>Bio</span></h2>
 				                        
-				                        <!-- Bio Content with Image on the Right -->
-				                        <div class="row">
-				                            <!-- Text Column -->
-				                            <div class="col-xs-12 col-md-8" style="width: 70%; float: left; padding-right: 20px;">
+				                        <div class="row" style="display: block; width: 100%;">
+				                            <!-- Text Column - 70% -->
+				                            <div class="col-xs-12 col-md-8" style="width: 70%; float: left; padding-right: 30px;">
 				                                <p class="tm-text">Photography has been my lifelong passion, captivating me since childhood. My journey began as a teenager when I acquired my first camera, 
 				                                immersing myself in the art of experimentation with light, shadow, colors, 
 				                                and angles—the fascinating elements of photography. Over the years, I dedicated myself to continuous learning, absorbing insights from numerous photography articles and tutorials.
@@ -103,20 +102,26 @@ http://www.tooplate.com/view/2086-multi-color
 				                                <p class="tm-text">Cheers!</p>
 				                            </div>
 				
-				                            <!-- Image Column -->
-											<div class="col-xs-12 col-md-4 text-xs-center" style="width: 30%; float: right;">
-											    <img src="img/profilepic.jpg" alt="Mo Khatami" class="img-fluid" style="border-radius: 5px; margin-top: 10px; width: 100%;">
-											</div>
+				                            <!-- Image Column - 30% -->
+				                            <div class="col-xs-12 col-md-4 text-xs-center" style="width: 30%; float: right;">
+				                                <img src="img/profilepic.jpg" alt="Mo Khatami" class="img-fluid" style="border-radius: 5px; margin-top: 10px; width: 100%; height: auto;">
+				                            </div>
+				
+				                            <!-- Clearfix to prevent the next heading from overlapping -->
+				                            <div style="clear: both;"></div>
 				                        </div>
 				                    </div>
 				
-				                    <h2 class="tm-text-title tm-gallery-title"><span class="tm-white">Aviation Gallery</span></h2>
-				                    <p class="tm-text"><span class="tm-white"> Aviation photography has become the lens through which I capture its boundless beauty. It's not just a job or a hobby; it's my entire life.
-				                    The dream of being up there, amidst the clouds and airplanes, has always held me captive, and now, it's my everyday reality.
-				                    When you love what you do, work doesn't feel like work; it's more like play. For me, every moment is an opportunity to immerse myself in the visual poetry of aviation. 
-				                    It's not just a dream that came true; it's a lifelong passion that keeps me soaring high, both in my professional and personal life.</span></p>
+				                    <!-- Aviation Gallery Header -->
+				                    <div style="margin-top: 60px; width: 100%;">
+				                        <h2 class="tm-text-title tm-gallery-title"><span class="tm-white">Aviation Gallery</span></h2>
+				                        <p class="tm-text"><span class="tm-white"> Aviation photography has become the lens through which I capture its boundless beauty. It's not just a job or a hobby; it's my entire life.
+				                        The dream of being up there, amidst the clouds and airplanes, has always held me captive, and now, it's my everyday reality.
+				                        When you love what you do, work doesn't feel like work; it's more like play. For me, every moment is an opportunity to immerse myself in the visual poetry of aviation. 
+				                        It's not just a dream that came true; it's a lifelong passion that keeps me soaring high, both in my professional and personal life.</span></p>
+				                    </div>
 				
-				                    <!-- Gallery items continue as before... -->
+				                    <!-- Gallery items continue -->
 				                    <div class="grid-item">
 				                        <figure class="effect-bubba">
 				                            <img src="img/tm-img-01-tn.jpg" alt="Image" class="img-fluid tm-img">
